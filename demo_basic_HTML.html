@@ -1,0 +1,401 @@
+<!DOCTYPE html>
+
+<html>
+
+<head>
+    <!--
+        Khai báo encoding UTF-8 cho trình duyệt biết
+        để định dạng đảm bảo không bị lỗi font
+    -->
+    <meta charset="UTF-8" />
+    <!-- Tiêu đề hiển thị trên tab -->
+    <title>Demo WEB1013</title>
+</head>
+
+<body>
+    <!-- Phần đầu của trang -->
+    <div>
+        <!-- Phần tiêu đề -->
+        <div>
+            <!-- Kích cỡ chữ to thứ 1 -->
+            <h1>
+                <!-- Căn giữa -->
+                <center>
+                    Hello PT160310!
+                </center>
+            </h1>
+        </div>
+
+        <!-- Phần phụ đề -->
+        <div>
+            <!-- Căn giữa -->
+            <center>
+                <!-- Kích cỡ chữ to thứ 3 -->
+                <h3>
+                    WEB1013 - XÂY DỤNG TRANG WEB
+                </h3>
+            </center>
+        </div>
+
+        <!-- HẾT đầu trang -->
+    </div>
+
+    <!-- Phần nội dung trang -->
+    <!-- 
+        Ở đây chia làm 2 mục chính: Mục lục và nội dung
+        Mục lục nằm bên trái
+        Nội dung nằm bên phải
+    -->
+    <div>
+        <!-- 
+            Sử dụng thẻ <table> để chia bố cục: n dòng 4 cột
+                Lề trái, Mục lục, Nội dung, Lề phải
+            Tổng chiều dài bảng bằng màn hình: width=100%
+        -->
+        <table width="100%">
+            <tr>
+                <!-- 
+                    Phần lề trái 
+                    bằng 10% chiều dài màn hình
+                -->
+                <td width="10%"></td>
+
+                <!-- 
+                    Phần mục lục bên trái nên gọi đầu tiên 
+                    dài bằng 15% chiều dài màn hình
+
+                    valign=top: Nội dung bên trong trải từ trên xuống
+                -->
+                <td width="15%" valign="top">
+                    <div>
+                        <!-- Đề mục -->
+                        <div>
+                            <h2>Mục lục</h2>
+                        </div>
+                        <!-- Nội dung -->
+                        <div>
+                            <!-- 
+                                Tạo mục lục đánh số tự động 
+                                Kiểu: 1, 2, 3, 4,...
+                            -->
+                            <ol>
+                                <!-- 1. Giới thiệu chung -->
+                                <li>
+                                    <!-- Dẫn link tới mục giới thiệu chung -->
+                                    <a href="#gioi-thieu-chung">
+                                        Giới thiệu chung
+                                    </a>
+                                </li>
+                                <!-- 2. Syllabus -->
+                                <li>
+                                    <!-- Dẫn link tới mục syllabus -->
+                                    <a href="#syllabus">
+                                        Syllabus
+                                    </a>
+                                </li>
+                                <!-- 3. Các đầu điểm -->
+                                <li>
+                                    <!-- Dẫn link tới mục các đầu điểm -->
+                                    <a href="#cac-dau-diem">
+                                        Các đầu điểm
+                                    </a>
+                                </li>
+                                <!-- 4. Assignment -->
+                                <li>
+                                    <!-- Dẫn link tới mục assignment -->
+                                    <a href="#assignment">
+                                        Assignment
+                                    </a>
+                                </li>
+                        </div>
+
+                        <!-- HẾT mục lục-->
+                    </div>
+                </td>
+
+                <!-- 
+                    Phần nội dung 
+                    Với mỗi phần sẽ được định dang bằng id để mục lục có thể trỏ tới
+                -->
+                <td>
+                    <!-- 1. Giới thiệu chung -->
+                    <div id="gioi-thieu-chung">
+                        <!-- Đề mục -->
+                        <div>
+                            <h2>1. Giới thiệu chung</h2>
+                        </div>
+                        <!-- Nội dung -->
+                        <div>
+                            <!-- Mô tả -->
+                            <div>
+                                <b>Môn học này trang bị cho sinh viên các kiến thức và kỹ năng sau:</b>
+                                <!-- Liệt kê các kỹ năng -->
+                                <ul>
+                                    <li>Ứng dụng web là gì</li>
+                                    <li>Quy trình thiết kế trang web</li>
+                                    <li>Ngôn ngữ HTML</li>
+                                    <li>Bảng định kiểu</li>
+                                    <li>Các tiện ích Internet</li>
+                                    <li>Quản trị website hiệu quả</li>
+                                </ul>
+                            </div>
+                            <!-- Nhiệm vụ của sinh viên -->
+                            <div>
+                                <b>Nhiệm vụ của sinh viên:</b>
+                                <!-- Liệt kê các nhiệm vụ -->
+                                <ul>
+                                    <li>
+                                        Tham dự <mark>tối thiểu 75% số giờ</mark> trên lớp và
+                                        trả lời <mark>đúng 75% câu hỏi</mark>
+                                        trong bài học online là điều kiện để được tham gia đánh giá module/môn học.
+                                    </li>
+                                    <li>
+                                        Yêu cầu sinh viên có giáo trình bắt buộc tại mỗi buổi học trên lớp;
+                                        nếu không, Giảng viên không tính điểm danh cho sinh viên buổi học đó.
+                                    </li>
+                                    <li>
+                                        Thực hiện các nhiệm vụ sinh viên trước giờ học
+                                        và sau giờ học đươc nêu chi tiết trong lịch trình học.
+                                    </li>
+                                    <li>
+                                        Tích cực tham gia các hoạt động trong giờ học trên lớp
+                                    </li>
+                                    <li>
+                                        Thực hiện đầy đủ các nhiệm vụ giảng viên giao.
+                                    </li>
+                                    <li>
+                                        Hoàn thiện và nộp đúng hạn Assignment theo từng giai đoạn và bản báo cáo
+                                        Assignment cuối kỳ.
+                                    </li>
+                                    <li>
+                                        Không được sử dụng laptop trong giờ học lý thuyết trừ trường hợp Giảng viên yêu
+                                        cầu
+                                    </li>
+                                    <li>
+                                        Sử dụng các tài nguyên đi kèm sách (nếu có)
+                                        và tìm kiếm thêm các tài nguyên tham khảo từ các nguồn khác nhau để hoàn thiện
+                                        kiến thức học.
+                                    </li>
+                                    <li>
+                                        Truy cập website tài nguyên (http://lms.poly.edu.vn) để có thông tin
+                                        và tài nguyên cập nhật nhất của khóa học.
+                                    </li>
+                                    <li>
+                                        Truy cập website quản lý khóa học (http://ap.poly.edu.vn) để có lịch học và kết
+                                        quả điểm
+                                    </li>
+                                    <li>
+                                        Email cho giảng viên khi có câu hỏi thắc mắc ngoài giờ học.
+                                    </li>
+                                </ul>
+                            </div>
+                        </div>
+                    </div>
+
+                    <!-- 2. Syllabus -->
+                    <div id="syllabus">
+                        <!-- Đề mục -->
+                        <div>
+                            <h2>2. Syllabus</h2>
+                        </div>
+                        <!-- Nội dung -->
+                        <div>
+                            Nhấp vào <a href="#">đây</a> để xem chi tiết
+                        </div>
+                    </div>
+
+                    <!-- 3. Các đầu điểm -->
+                    <div id="cac-dau-diem">
+                        <!-- Đề mục -->
+                        <div>
+                            <h2>3. Các đầu điểm</h2>
+                        </div>
+                        <!-- Nội dung -->
+                        <div>
+                            <!-- 
+                                Hiển thị các thành phần điểm dưới dạng bảng 
+
+                                Chiều dài bảng bằng kích thước của nội dung: width=100%
+                                Kẻ viền 1 pixel cho bảng
+                            -->
+                            <table width="100%" border="1px">
+                                <!-- 
+                                    Tiêu đề các cột 
+                                    Hạng mục - Phần - Trọng số - Cách đánh giá
+                                 -->
+                                <thead>
+                                    <tr>
+                                        <th>
+                                            Hạng mục đánh giá
+                                        </th>
+                                        <th>
+                                            Phần
+                                        </th>
+                                        <th>
+                                            Trọng số
+                                        </th>
+                                        <th>
+                                            Cách đánh giá
+                                        </th>
+                                    </tr>
+                                </thead>
+
+                                <!-- Nội dung bảng-->
+                                <tbody>
+                                    <!-- Đánh giá kết quả -->
+                                    <div>
+                                        <!-- Bài học online -->
+                                        <tr>
+                                            <!-- Ô này chiếm 6 dòng -->
+                                            <td rowspan="6">
+                                                Đánh giá kết quả
+                                            </td>
+                                            <td>
+                                                Bài học online
+                                            </td>
+                                            <td>
+                                                10%
+                                            </td>
+                                            <td>
+                                                Chấm bằng máy
+                                            </td>
+                                        </tr>
+                                        <!-- Lab -->
+                                        <tr>
+                                            <!-- Bỏ 1 cột vì mục "Đánh giá kết quả đã chiếm" -->
+                                            <td>
+                                                Lab
+                                            </td>
+                                            <td>
+                                                20%
+                                            </td>
+                                            <td>
+                                                Giảng viên chấm bằng tay tại lớp hoặc download từ LMS để chấm
+                                            </td>
+                                        </tr>
+                                        <!-- Tham gia bài giảng -->
+                                        <tr>
+                                            <!-- Bỏ 1 cột vì mục "Đánh giá kết quả đã chiếm" -->
+                                            <td>
+                                                Tham gia bài giảng
+                                            </td>
+                                            <td>
+                                                6%
+                                            </td>
+                                            <td rowspan="2">
+                                                Theo dõi trên lớp và điểm danh
+                                            </td>
+                                        </tr>
+                                        <!-- Chuyên cần -->
+                                        <tr>
+                                            <!-- Bỏ 1 cột vì mục "Đánh giá kết quả đã chiếm" -->
+                                            <td>
+                                                Chuyên cần
+                                            </td>
+                                            <td>
+                                                4%
+                                            </td>
+                                            <!-- Bỏ 1 cột vì mục "Tham gia bài giảng" trên vừa chiếm -->
+                                        </tr>
+                                        <!-- Document, sản phẩm -->
+                                        <tr>
+                                            <!-- Bỏ 1 cột vì mục "Đánh giá kết quả đã chiếm" -->
+                                            <td>
+                                                Document, sản phẩm
+                                            </td>
+                                            <td>
+                                                10%
+                                            </td>
+                                            <td>
+                                                <span>
+                                                    - Sinh viên nộp trên LMS
+                                                    <br />
+                                                    - GV chấm document trước ở nhà và ghi chú những điểm nghi ngờ để khi
+                                                    bảo vệ hỏi SV
+                                                </span>
+                                            </td>
+                                        </tr>
+                                        <!-- Presentation -->
+                                        <tr>
+                                            <!-- Bỏ 1 cột vì mục "Đánh giá kết quả đã chiếm" -->
+                                            <td>
+                                                Presentation
+                                            </td>
+                                            <td>
+                                                30%
+                                            </td>
+                                            <td>
+                                                Sinh viên bảo vệ trước hội đồng 2 GV
+                                                (GV đứng lớp và GV phản biện)
+                                            </td>
+                                        </tr>
+                                    </div>
+                                    <!-- Đánh giá quá trình -->
+                                    <div>
+                                        <!-- Đánh giá Assignment GĐ 1 -->
+                                        <tr>
+                                            <!-- Ô này chiếm 2 dòng -->
+                                            <td rowspan="2">
+                                                Đánh giá Assignment GĐ 1
+                                            </td>
+                                            <td>
+                                                Bài học online
+                                            </td>
+                                            <td>
+                                                10%
+                                            </td>
+                                            <!-- Ô này chiếm 2 dòng -->
+                                            <td rowspan="2">
+                                                Giảng viên chấm bằng tay download từ LMS để chấm
+                                            </td>
+                                        </tr>
+                                        <!-- Đánh giá Assignment GĐ 2 -->
+                                        <tr>
+                                            <!-- Bỏ cột vì mục "Đánh giá Assignment GĐ 1" đã chiếm -->
+                                            <td>
+                                                Đánh giá Assignment GĐ 2
+                                            </td>
+                                            <td>
+                                                20%
+                                            </td>
+                                            <!-- Bỏ cột vì mục "Đánh giá Assignment GĐ 1" đã chiếm -->
+                                        </tr>
+                                    </div>
+                                </tbody>
+                            </table>
+                        </div>
+                    </div>
+
+                    <!-- 4. Assignment -->
+                    <div id="assignment">
+                        <!-- Đề mục -->
+                        <div>
+                            <h2>4. Assignment</h2>
+                        </div>
+                        <!-- Nội dung -->
+                        <div>
+                            <img src="https://lh6.googleusercontent.com/W-UUAyoDF81uSR0fZ1s0mv0I0cPxkhrkIwr2J8NROc15uRdquCm302ZNVovw6rxl1pht6BB_G09t4st94ENl=w1364-h697"
+                                alt="Mô tả Assignment" width="100%" />
+                        </div>
+                    </div>
+                    <!-- HẾT nội dung -->
+                </td>
+
+                <!-- 
+                    Phần lề phải 
+                    bằng 10% chiều dài màn hình
+                -->
+                <td width="10%"></td>
+            </tr>
+        </table>
+        <!-- HẾT Nội dung trang -->
+    </div>
+
+    <!-- Phần chân trang -->
+    <div>
+
+        <!-- HẾT chân trang -->
+    </div>
+</body>
+
+</html>
